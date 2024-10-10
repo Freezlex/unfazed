@@ -1,0 +1,30 @@
+._ghost {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    text-align: center;
+    padding: 40px;
+    border: solid 1px var(--quill-gray);
+    border-radius: 10px;
+
+    h1 {
+        font-size: 1.25em;
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1em;
+        text-align: justify;
+        padding: 5px 0;
+    }
+
+    .center {
+        text-align: center;
+    }
+}
