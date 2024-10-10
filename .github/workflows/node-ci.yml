@@ -14,15 +14,14 @@ jobs:
     env:
       CI: true
     steps:
+      - name: Checkout Repository
       - uses: actions/checkout@v4
-
-      - name: Use pnpm
+      - name: Setup pnpm as package manager
         uses: pnpm/action-setup@v4
         with:
           run_install: false
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - name: Setup Node v.${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
